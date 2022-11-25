@@ -8,13 +8,30 @@
 import SwiftUI
 
 struct Login: View {
+    @State private var email = ""
+    @State private var pssw = ""
+    @EnvironmentObject var login : PVModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color.blue.edgesIgnoringSafeArea(.all)
+            VStack{
+                Text("Email").foregroundColor(.white).bold()
+                TextField("Email", text: $email)
+                    .background(Color.white)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.emailAddress)
+                Text("Password").foregroundColor(.white).bold()
+                SecureField("Password", text: $pssw)
+                    .background(Color.white)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                Button(action:{
+                    login.login(email: email, pssw: pssw)
+                }){
+                    Text("Entrar").foregroundColor(.white).bold()
+                }
+            }.padding()
+        }
     }
 }
 
-struct Login_Previews: PreviewProvider {
-    static var previews: some View {
-        Login()
-    }
-}

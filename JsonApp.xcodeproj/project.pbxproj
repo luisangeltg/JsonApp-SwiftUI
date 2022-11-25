@@ -11,6 +11,17 @@
 		9313053029308837002EA5E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313052F29308837002EA5E5 /* ContentView.swift */; };
 		9313053229308839002EA5E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9313053129308839002EA5E5 /* Assets.xcassets */; };
 		9313053529308839002EA5E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9313053429308839002EA5E5 /* Preview Assets.xcassets */; };
+		9313053F29308B88002EA5E5 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313053E29308B88002EA5E5 /* PostModel.swift */; };
+		93130543293090C1002EA5E5 /* PVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93130542293090C1002EA5E5 /* PVModel.swift */; };
+		9313054529309C04002EA5E5 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313054429309C04002EA5E5 /* Login.swift */; };
+		9313054729309C10002EA5E5 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313054629309C10002EA5E5 /* Home.swift */; };
+		931305492930B310002EA5E5 /* Modelo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931305482930B310002EA5E5 /* Modelo1.swift */; };
+		9313054D2930B34A002EA5E5 /* Modelo1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313054C2930B34A002EA5E5 /* Modelo1ViewModel.swift */; };
+		9313054F2930BDE0002EA5E5 /* Modelo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313054E2930BDE0002EA5E5 /* Modelo2.swift */; };
+		931305512930BE90002EA5E5 /* Modelo2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931305502930BE90002EA5E5 /* Modelo2ViewModel.swift */; };
+		931305532930C0D9002EA5E5 /* Home2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931305522930C0D9002EA5E5 /* Home2.swift */; };
+		931305552930D169002EA5E5 /* DetalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931305542930D169002EA5E5 /* DetalleView.swift */; };
+		931305572930D1DD002EA5E5 /* DetalleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931305562930D1DD002EA5E5 /* DetalleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +30,17 @@
 		9313052F29308837002EA5E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9313053129308839002EA5E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9313053429308839002EA5E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9313053E29308B88002EA5E5 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		93130542293090C1002EA5E5 /* PVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVModel.swift; sourceTree = "<group>"; };
+		9313054429309C04002EA5E5 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		9313054629309C10002EA5E5 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		931305482930B310002EA5E5 /* Modelo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelo1.swift; sourceTree = "<group>"; };
+		9313054C2930B34A002EA5E5 /* Modelo1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelo1ViewModel.swift; sourceTree = "<group>"; };
+		9313054E2930BDE0002EA5E5 /* Modelo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelo2.swift; sourceTree = "<group>"; };
+		931305502930BE90002EA5E5 /* Modelo2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelo2ViewModel.swift; sourceTree = "<group>"; };
+		931305522930C0D9002EA5E5 /* Home2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home2.swift; sourceTree = "<group>"; };
+		931305542930D169002EA5E5 /* DetalleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleView.swift; sourceTree = "<group>"; };
+		931305562930D1DD002EA5E5 /* DetalleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +73,9 @@
 		9313052C29308837002EA5E5 /* JsonApp */ = {
 			isa = PBXGroup;
 			children = (
+				9313053D29308880002EA5E5 /* Models */,
+				9313053C29308875002EA5E5 /* Views */,
+				9313053B2930886D002EA5E5 /* ViewModel */,
 				9313052D29308837002EA5E5 /* JsonAppApp.swift */,
 				9313052F29308837002EA5E5 /* ContentView.swift */,
 				9313053129308839002EA5E5 /* Assets.xcassets */,
@@ -65,6 +90,38 @@
 				9313053429308839002EA5E5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9313053B2930886D002EA5E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				931305562930D1DD002EA5E5 /* DetalleViewModel.swift */,
+				93130542293090C1002EA5E5 /* PVModel.swift */,
+				9313054C2930B34A002EA5E5 /* Modelo1ViewModel.swift */,
+				931305502930BE90002EA5E5 /* Modelo2ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9313053C29308875002EA5E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9313054429309C04002EA5E5 /* Login.swift */,
+				9313054629309C10002EA5E5 /* Home.swift */,
+				931305522930C0D9002EA5E5 /* Home2.swift */,
+				931305542930D169002EA5E5 /* DetalleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9313053D29308880002EA5E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9313053E29308B88002EA5E5 /* PostModel.swift */,
+				931305482930B310002EA5E5 /* Modelo1.swift */,
+				9313054E2930BDE0002EA5E5 /* Modelo2.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +195,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9313053029308837002EA5E5 /* ContentView.swift in Sources */,
+				931305512930BE90002EA5E5 /* Modelo2ViewModel.swift in Sources */,
+				931305552930D169002EA5E5 /* DetalleView.swift in Sources */,
+				93130543293090C1002EA5E5 /* PVModel.swift in Sources */,
+				9313054529309C04002EA5E5 /* Login.swift in Sources */,
+				9313053F29308B88002EA5E5 /* PostModel.swift in Sources */,
+				931305492930B310002EA5E5 /* Modelo1.swift in Sources */,
 				9313052E29308837002EA5E5 /* JsonAppApp.swift in Sources */,
+				9313054D2930B34A002EA5E5 /* Modelo1ViewModel.swift in Sources */,
+				9313054729309C10002EA5E5 /* Home.swift in Sources */,
+				931305572930D1DD002EA5E5 /* DetalleViewModel.swift in Sources */,
+				9313054F2930BDE0002EA5E5 /* Modelo2.swift in Sources */,
+				931305532930C0D9002EA5E5 /* Home2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +343,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +373,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

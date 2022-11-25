@@ -8,13 +8,48 @@
 import SwiftUI
 
 struct Home2: View {
+    @StateObject var json = Modelo2ViewModel()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if json.datosModelo.data.isEmpty {
+            ProgressView()
+        } else {
+            List(json.datosModelo.data, id: \.id) { item in
+                NavigationLink(destination: DetalleView(id: item.id)){
+                    HStack {
+    //                    Image(systemName: "persona.fill")
+    //                        .data(url: URL(string: item.avatar)!)
+    //                        .frame(width: 80, height: 80)
+    //                        .clipped()
+    //                        .clipShape(Circle())
+                        
+                        AsyncImage(url: URL(string: item.avatar), content: { image in
+                                    image.resizable()
+                                }, placeholder: {
+                                    ProgressView()
+                                })
+                                    .frame(width: 80, height: 80)
+                                    .clipShape(Circle())
+                        VStack(alignment: .leading) {
+                            Text(item.first_name).font(.title)
+                            Text(item.email).font(.subheadline)
+                        }
+                    }.navigationTitle("JSON con Imagen")
+                }
+            }
+        }
     }
 }
 
-struct Home2_Previews: PreviewProvider {
-    static var previews: some View {
-        Home2()
-    }
-}
+
+//extension Image {
+//    func data(url: URL) -> Self {
+//        if let data = try? Data(contentsOf: url) {
+//            return Image(uiImage: UIImage(data: data)!)
+//                .resizable()
+//        }
+//        return self
+//            .resizable()
+//    }
+//}
+

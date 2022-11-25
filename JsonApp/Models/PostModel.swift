@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct PostModel : Codable {
+    var token : String
+    
+    
+}
+
+

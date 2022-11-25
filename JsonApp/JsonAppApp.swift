@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct JsonAppApp: App {
     var body: some Scene {
+        let login = PVModel()
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(login)
         }
     }
 }
